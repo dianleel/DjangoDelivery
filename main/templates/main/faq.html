@@ -1,0 +1,180 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Часто задаваемые вопросы</h1>
+
+    <!-- Общие вопросы -->
+    <div class="mb-4">
+        <h3>Общие вопросы</h3>
+        <div class="accordion" id="accordionGeneral">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="general1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneral1">
+                        Как работает ваш сервис доставки?
+                    </button>
+                </h2>
+                <div id="collapseGeneral1" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
+                    <div class="accordion-body">
+                        Наш сервис использует современные дроны для быстрой и эффективной доставки. После оформления заказа дрон забирает его из точки отправления и доставляет по указанному адресу. Вы можете отслеживать перемещение дрона в реальном времени через наше приложение.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="general2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneral2">
+                        В какие районы осуществляется доставка?
+                    </button>
+                </h2>
+                <div id="collapseGeneral2" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
+                    <div class="accordion-body">
+                        В настоящее время мы осуществляем доставку во все районы города Алматы в пределах ВОАД (Восточной объездной автомобильной дороги). В ближайшее время планируется расширение зоны доставки.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Заказы и оплата -->
+    <div class="mb-4">
+        <h3>Заказы и оплата</h3>
+        <div class="accordion" id="accordionOrders">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="orders1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrders1">
+                        Какие способы оплаты вы принимаете?
+                    </button>
+                </h2>
+                <div id="collapseOrders1" class="accordion-collapse collapse" data-bs-parent="#accordionOrders">
+                    <div class="accordion-body">
+                        Мы принимаем различные способы оплаты:
+                        <ul>
+                            <li>Банковские карты (Visa, MasterCard)</li>
+                            <li>Kaspi Pay</li>
+                            <li>Apple Pay</li>
+                            <li>Google Pay</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="orders2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrders2">
+                        Сколько времени занимает доставка?
+                    </button>
+                </h2>
+                <div id="collapseOrders2" class="accordion-collapse collapse" data-bs-parent="#accordionOrders">
+                    <div class="accordion-body">
+                        Среднее время доставки составляет 15-30 минут в зависимости от расстояния и погодных условий. После оформления заказа вы получите точное расчетное время доставки.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Безопасность -->
+    <div class="mb-4">
+        <h3>Безопасность</h3>
+        <div class="accordion" id="accordionSafety">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="safety1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSafety1">
+                        Насколько безопасна доставка дронами?
+                    </button>
+                </h2>
+                <div id="collapseSafety1" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
+                    <div class="accordion-body">
+                        Наши дроны оснащены современными системами безопасности, включая автоматическое обнаружение препятствий и аварийную посадку. Все полеты осуществляются в соответствии с правилами использования воздушного пространства и под постоянным контролем операторов.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="safety2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSafety2">
+                        Что происходит с заказом в плохую погоду?
+                    </button>
+                </h2>
+                <div id="collapseSafety2" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
+                    <div class="accordion-body">
+                        В случае неблагоприятных погодных условий (сильный ветер, гроза, снег) мы можем временно приостановить доставку дронами для обеспечения безопасности. В таких случаях мы предложим альтернативный способ доставки или возможность перенести заказ.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Проблемы и решения -->
+    <div class="mb-4">
+        <h3>Проблемы и решения</h3>
+        <div class="accordion" id="accordionProblems">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="problems1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProblems1">
+                        Что делать, если заказ не доставлен?
+                    </button>
+                </h2>
+                <div id="collapseProblems1" class="accordion-collapse collapse" data-bs-parent="#accordionProblems">
+                    <div class="accordion-body">
+                        В случае проблем с доставкой вы можете:
+                        <ul>
+                            <li>Проверить статус заказа в приложении</li>
+                            <li>Связаться с нашей службой поддержки</li>
+                            <li>Запросить возврат средств, если заказ не был доставлен</li>
+                        </ul>
+                        Мы обрабатываем все проблемные ситуации в приоритетном порядке.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="problems2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProblems2">
+                        Как отменить заказ?
+                    </button>
+                </h2>
+                <div id="collapseProblems2" class="accordion-collapse collapse" data-bs-parent="#accordionProblems">
+                    <div class="accordion-body">
+                        Отменить заказ можно в течение 5 минут после оформления через приложение или позвонив в службу поддержки. После начала доставки отмена заказа невозможна.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контактная информация -->
+    <div class="text-center mt-5">
+        <p>Не нашли ответ на свой вопрос?</p>
+        <p>Свяжитесь с нами:</p>
+        <p>Email: support@dronedelivery.kz</p>
+        <p>Телефон: +7 (727) 123-45-67</p>
+    </div>
+</div>
+{% endblock %}
+
+<!-- Add custom CSS for better styling -->
+{% block extra_css %}
+<style>
+    .accordion-button:not(.collapsed) {
+        background-color: #FF6B00;
+        color: white;
+    }
+
+    .accordion-button:focus {
+        border-color: #FF6B00;
+        box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+    }
+
+    h3 {
+        color: #FF6B00;
+        margin-bottom: 1rem;
+    }
+
+    .accordion-item {
+        margin-bottom: 0.5rem;
+    }
+</style>
+{% endblock %}

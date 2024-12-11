@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="text-white fw-bold">Сервис доставки будущего</h1>
+        <i class="bi bi-arrow-down text-white"></i>
+    </div>
+</div>
+
+<section class="popular-spots py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Популярные точки заказов</h2>
+        <div class="row">
+            {% for spot in popular_spots %}
+            <div class="col-md-4">
+                <div class="spot-circle">
+                    <img src="{% static spot.logo %}" alt="{{ spot.name }}" class="img-fluid rounded-circle">
+                    <h3 class="mt-3">{{ spot.name }}</h3>
+                    <p>{{ spot.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="join-us py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Присоединиться к нам</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="join-block">
+                    <h3>Стать курьером</h3>
+                    <p>Хотите иметь свободу, гибкий график и достойную оплату? Доставляйте с Dronly!</p>
+                    <button class="btn btn-primary">Отправить заявку</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="join-block">
+                    <h3>Стать партнером</h3>
+                    <p>Dronly поможет ускорить рост вашего бизнеса: наши технологии и пользовательская база созданы, чтобы увеличить продажи и открыть для вас новые возможности!</p>
+                    <button class="btn btn-primary">Отправить заявку</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="join-block">
+                    <h3>Вакансии</h3>
+                    <p>Готовы к покорению новой вершины? Если вы амбициозны, скромны и любите работать в дружной команде, мы хотим познакомиться с вами!</p>
+                    <button class="btn btn-primary">Отправить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,210 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="about-page">
+    <!-- Hero Section -->
+    <div class="hero-section position-relative text-white" style="background-color: #FF6B00;">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">О нас</h1>
+                    <p class="lead">Мы меняем представление о доставке, используя современные технологии для быстрой и эффективной доставки ваших заказов.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape position-absolute bottom-0 start-0 w-100" style="height: 70px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0,150 L500,150 L500,0 L0,100 Z" style="fill: white;"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="{% static 'images/drone-mission.jpg' %}" alt="Наша миссия" class="img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Наша миссия</h2>
+                <p>Мы стремимся сделать доставку максимально быстрой, экологичной и доступной для каждого. Используя инновационные технологии дронов, мы сокращаем время доставки и уменьшаем влияние на окружающую среду.</p>
+                <div class="d-flex align-items-center mt-4">
+                    <div class="me-4 text-center">
+                        <h3 class="text-primary mb-0">15+</h3>
+                        <small>Дронов</small>
+                    </div>
+                    <div class="me-4 text-center">
+                        <h3 class="text-primary mb-0">1000+</h3>
+                        <small>Доставок</small>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-primary mb-0">98%</h3>
+                        <small>Довольных клиентов</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Почему выбирают нас</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-clock fs-1 text-primary"></i>
+                            </div>
+                            <h4>Быстрая доставка</h4>
+                            <p>Доставка за 15-30 минут в любую точку города благодаря использованию дронов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-shield-check fs-1 text-primary"></i>
+                            </div>
+                            <h4>Безопасность</h4>
+                            <p>Современные системы безопасности и мониторинг каждой доставки в реальном времени.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-leaf fs-1 text-primary"></i>
+                            </div>
+                            <h4>Экологичность</h4>
+                            <p>Нулевые выбросы CO2 и забота об окружающей среде благодаря использованию электрических дронов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Наша команда</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <img src="{% static 'images/placeholder-profile.jpg' %}" alt="CEO" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="card-title">Алексей Петров</h5>
+                        <p class="card-text text-muted">CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <img src="{% static 'images/placeholder-profile.jpg' %}" alt="CTO" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="card-title">Мария Иванова</h5>
+                        <p class="card-text text-muted">CTO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <img src="{% static 'images/placeholder-profile.jpg' %}" alt="Operations Manager" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="card-title">Арман Сатаев</h5>
+                        <p class="card-text text-muted">Operations Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <img src="{% static 'images/placeholder-profile.jpg' %}" alt="Support Lead" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="card-title">Айгуль Нурланова</h5>
+                        <p class="card-text text-muted">Support Lead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Свяжитесь с нами</h2>
+                    <p class="mb-4">У вас есть вопросы или предложения? Мы всегда рады помочь!</p>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt fs-2 text-primary mb-2"></i>
+                                <h5>Адрес</h5>
+                                <p>ул. Сатпаева 90/1, Алматы</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-item">
+                                <i class="bi bi-envelope fs-2 text-primary mb-2"></i>
+                                <h5>Email</h5>
+                                <p>info@dronedelivery.kz</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-item">
+                                <i class="bi bi-telephone fs-2 text-primary mb-2"></i>
+                                <h5>Телефон</h5>
+                                <p>+7 (727) 123-45-67</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.text-primary {
+    color: #FF6B00 !important;
+}
+
+.bg-primary {
+    background-color: #FF6B00 !important;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 107, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contact-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8533 100%);
+}
+</style>
+{% endblock %}
